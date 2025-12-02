@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio do Marcelo Monteiro</title>
+  <title>Portfólio Marcelo Monteiro</title>
 
   <style>
     body {
@@ -40,6 +40,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.35);
     }
 
+    /* GALERIA */
     .galeria {
       width: 90%;
       max-width: 1300px;
@@ -62,15 +63,24 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.45);
     }
 
-    /* Corrigido: imagem não corta */
-    .card img {
+    /* ---------- PADRONIZAÇÃO DAS IMAGENS ---------- */
+    .img-box {
       width: 100%;
-      height: auto;
+      height: 250px;
+      background: #141726; /* fundo original mantido */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
-      padding: 10px;
-      background: #0d0f1a;
       display: block;
     }
+    /* -------------------------------------------- */
 
     .card-title {
       padding: 12px;
@@ -79,19 +89,26 @@
       color: #dcdcdc;
       text-transform: lowercase;
     }
+
+    .fim {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto 80px auto;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>Portfólio do Marcelo Monteiro</h1>
+  <h1>Portfólio Marcelo Monteiro</h1>
 
   <!-- SOBRE MIM -->
   <div class="sobre">
     <p>
-      Olá! Meu nome é <strong>Marcelo Monteiro</strong>, sou desenvolvedor e estudante de desenvolvimento grafico,
-      e Analise e desenvolvimento de sistemas. Aqui você encontra algumas das minhas artes, estudos e
-      projetos pessoais.
+      Olá! Meu nome é <strong>Marcelo Monteiro</strong>, sou desenvolvedor e estudante de análise e desenvolvimento de sistemas,
+      além de atuar também com desenvolvimento gráfico. Aqui você encontra algumas das minhas artes, estudos e projetos pessoais.
     </p>
     <p>
       Fique à vontade para explorar meu trabalho. Caso queira entrar em contato:
@@ -105,43 +122,83 @@
   <!-- GALERIA ARTES -->
   <h2>Artes</h2>
   <div class="galeria">
+
     <div class="card">
-      <img src="assets/artes/Arte-05.jpg" alt="Arte" />
-      <div class="card-title">arte 05</div>
+      <div class="img-box"><img src="assets/artes/Arte-1.jpg" alt="Arte 01"></div>
+      <div class="card-title">Gandalf</div>
     </div>
+
     <div class="card">
-      <img src="assets/artes/Arte-06.jpg" alt="Arte" />
-      <div class="card-title">arte 06</div>
+      <div class="img-box"><img src="assets/artes/Arte-2.jpg" alt="Arte 02"></div>
+      <div class="card-title">Casa</div>
     </div>
+
     <div class="card">
-      <img src="assets/artes/Arte-07.jpg" alt="Arte" />
-      <div class="card-title">arte 07</div>
+      <div class="img-box"><img src="assets/artes/Arte-3.jpg" alt="Arte 03"></div>
+      <div class="card-title">Xícara</div>
     </div>
+
     <div class="card">
-      <img src="assets/artes/Arte-08.jpg" alt="Arte" />
-      <div class="card-title">arte 08</div>
+      <div class="img-box"><img src="assets/artes/Arte-05.jpg" alt="Arte 05"></div>
+      <div class="card-title">Casaco</div>
     </div>
+
     <div class="card">
-      <img src="assets/artes/Arte-09.jpg" alt="Arte" />
-      <div class="card-title">arte 09</div>
+      <div class="img-box"><img src="assets/artes/Arte-06.jpg" alt="Arte 06"></div>
+      <div class="card-title">Menu</div>
     </div>
+
     <div class="card">
-      <img src="assets/artes/Arte-10.jpg" alt="Arte" />
-      <div class="card-title">arte 10</div>
+      <div class="img-box"><img src="assets/artes/Arte-07.jpg" alt="Arte 07"></div>
+      <div class="card-title">Alfasys</div>
     </div>
+
+    <div class="card">
+      <div class="img-box"><img src="assets/artes/Arte-08.jpg" alt="Arte 08"></div>
+      <div class="card-title">Pessoa</div>
+    </div>
+
+    <div class="card">
+      <div class="img-box"><img src="assets/artes/Arte-09.jpg" alt="Arte 09"></div>
+      <div class="card-title">Urso</div>
+    </div>
+
+    <div class="card">
+      <div class="img-box"><img src="assets/artes/Arte-10.jpg" alt="Arte 10"></div>
+      <div class="card-title">2020</div>
+    </div>
+
   </div>
 
   <!-- GALERIA PROJETOS -->
   <h2>Projetos</h2>
   <div class="galeria">
+
     <div class="card">
-      <img src="assets/projetos/projeto-01.jpg" alt="Projeto" />
-      <div class="card-title">projeto 01</div>
+      <div class="img-box"><img src="assets/projetos/projeto-01.png" alt="Projeto 01"></div>
+      <div class="card-title">Dashboard</div>
     </div>
+
     <div class="card">
-      <img src="assets/projetos/projeto-02.jpg" alt="Projeto" />
-      <div class="card-title">projeto 02</div>
+      <div class="img-box"><img src="assets/projetos/projeto-02.png" alt="Projeto 02"></div>
+      <div class="card-title">Tela de Login</div>
     </div>
+
+    <div class="card">
+      <div class="img-box"><img src="assets/projetos/projeto-03.png" alt="Projeto 03"></div>
+      <div class="card-title">Tela de Cadastro</div>
+    </div>
+
+    <div class="card">
+      <div class="img-box"><img src="assets/projetos/projeto-04.png" alt="Projeto 04"></div>
+      <div class="card-title">Monte sua pizza</div>
+    </div>
+
+  </div>
+
+  <div class="fim">
+    <p>Este projeto representa o desenvolvimento completo de um site de pizzaria, incluindo login, cadastro e montagem de pizza.</p>
+    <p>Além disso, foram criadas páginas para combos, promoções da semana e bebidas.</p>
   </div>
 
 </body>
