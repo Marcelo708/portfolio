@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio do Marcelo Monteiro</title>
+
   <style>
     body {
       margin: 0;
@@ -20,6 +21,25 @@
       font-weight: bold;
     }
 
+    h2 {
+      margin-top: 60px;
+      font-size: 2rem;
+      color: #ccc;
+    }
+
+    /* SOBRE MIM */
+    .sobre {
+      width: 80%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: #141726;
+      padding: 25px;
+      border-radius: 12px;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+    }
+
     .galeria {
       width: 90%;
       max-width: 1300px;
@@ -33,71 +53,96 @@
       background: #141726;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       transition: 0.3s ease;
     }
 
     .card:hover {
       transform: scale(1.03);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
     }
 
+    /* Corrigido: imagem não corta */
     .card img {
       width: 100%;
+      height: auto;
+      object-fit: contain;
+      padding: 10px;
+      background: #0d0f1a;
       display: block;
     }
 
     .card-title {
       padding: 12px;
       font-size: 1.1rem;
-      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+      background: rgba(0, 0, 0, 0.4);
       color: #dcdcdc;
       text-transform: lowercase;
     }
   </style>
 </head>
+
 <body>
+
   <h1>Portfólio do Marcelo Monteiro</h1>
 
+  <!-- SOBRE MIM -->
+  <div class="sobre">
+    <p>
+      Olá! Meu nome é <strong>Marcelo Monteiro</strong>, sou desenvolvedor e estudante de desenvolvimento grafico,
+      e Analise e desenvolvimento de sistemas. Aqui você encontra algumas das minhas artes, estudos e
+      projetos pessoais.
+    </p>
+    <p>
+      Fique à vontade para explorar meu trabalho. Caso queira entrar em contato:
+    </p>
+    <p>
+      📧 <strong>marcelo.m.henrique10@gmail.com</strong><br>
+      📱 <strong>(51) 99148-6930</strong>
+    </p>
+  </div>
+
+  <!-- GALERIA ARTES -->
+  <h2>Artes</h2>
   <div class="galeria">
-    <!-- Exemplo de item - basta duplicar esta div abaixo e trocar a imagem e o título -->
     <div class="card">
-      <img src="assets/Arte-05.jpg" alt="Arte" />
-      <div class="card-title">Arte 05</div>
+      <img src="assets/artes/Arte-05.jpg" alt="Arte" />
+      <div class="card-title">arte 05</div>
     </div>
     <div class="card">
-      <img src="assets/Arte-06.jpg" alt="Arte" />
-      <div class="card-title">Arte 06</div>
+      <img src="assets/artes/Arte-06.jpg" alt="Arte" />
+      <div class="card-title">arte 06</div>
     </div>
     <div class="card">
-      <img src="assets/Arte-07.jpg" alt="Arte" />
-      <div class="card-title">Arte 07</div>
+      <img src="assets/artes/Arte-07.jpg" alt="Arte" />
+      <div class="card-title">arte 07</div>
     </div>
     <div class="card">
-      <img src="assets/Arte-08.jpg" alt="Arte" />
-      <div class="card-title">Arte 08</div>
+      <img src="assets/artes/Arte-08.jpg" alt="Arte" />
+      <div class="card-title">arte 08</div>
     </div>
     <div class="card">
-      <img src="assets/Arte-09.jpg" alt="Arte" />
-      <div class="card-title">Arte 09</div>
+      <img src="assets/artes/Arte-09.jpg" alt="Arte" />
+      <div class="card-title">arte 09</div>
     </div>
     <div class="card">
-      <img src="assets/Arte-10.jpg" alt="Arte" />
-      <div class="card-title">Arte 10</div>
-    </div>
-    <div class="card">
-      <img src="assets/Arte-3.jpg" alt="Arte" />
-      <div class="card-title">Arte 03</div>
-    </div>
-    <div class="card">
-      <img src="assets/Arte-2.jpg" alt="Arte" />
-      <div class="card-title">Arte 02</div>
-    </div>
-    <div class="card">
-      <img src="assets/Arte-1.jpg" alt="Arte" />
-      <div class="card-title">Arte 01</div>
+      <img src="assets/artes/Arte-10.jpg" alt="Arte" />
+      <div class="card-title">arte 10</div>
     </div>
   </div>
+
+  <!-- GALERIA PROJETOS -->
+  <h2>Projetos</h2>
+  <div class="galeria">
+    <div class="card">
+      <img src="assets/projetos/projeto-01.jpg" alt="Projeto" />
+      <div class="card-title">projeto 01</div>
+    </div>
+    <div class="card">
+      <img src="assets/projetos/projeto-02.jpg" alt="Projeto" />
+      <div class="card-title">projeto 02</div>
+    </div>
+  </div>
+
 </body>
 </html>
-
